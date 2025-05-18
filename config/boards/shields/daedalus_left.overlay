@@ -1,0 +1,11 @@
+    #include "daedalus.dtsi"
+
+&kscan0 {
+    col-gpios
+        = <&pro_micro 10 GPIO_ACTIVE_HIGH> // INNER
+        , <&pro_micro 16 GPIO_ACTIVE_HIGH> // INDEX
+        , <&pro_micro 14 GPIO_ACTIVE_HIGH> // MIDDLE
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH> // RING
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH> // PINKY
+        ;
+};
