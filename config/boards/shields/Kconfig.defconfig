@@ -1,0 +1,16 @@
+if SHIELD_DAEDALUS_RIGHT
+
+config ZMK_DAEDALUS
+    default "Daedalus"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_DAEDALUS_RIGHT || SHIELD_DAEDALUS_LEFT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,5 @@
+config SHIELD_DAEDALUS_LEFT
+    def_bool $(shields_list_contains,daedalus_left)
+
+config SHIELD_DAEDALUS_RIGHT
+    def_bool $(shields_list_contains,daedalus_right)
