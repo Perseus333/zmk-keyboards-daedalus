@@ -2,12 +2,10 @@ file_format: "1"
 id: daedalus
 name: Daedalus
 type: shield
-url: https://github.com/Perseus333/daedalus-kbd
+url: https://github.com/perseus333/zmk-keyboards-daedalus
 requires: [pro_micro]
-exposes: [i2c_trackpad]
 features:
   - keys
-  - display
   - encoder
 siblings:
   - daedalus_left

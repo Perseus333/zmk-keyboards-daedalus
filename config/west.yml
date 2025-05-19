@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: Perseus333
-      url-base: https://github.com/Perseus333
+    - name: perseus333
+      url-base: https://github.com/perseus333
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -12,7 +12,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: zmk-keyboards-daedalus
-      remote: Perseus333
+      remote: perseus333
       revision: master
   self:
     path: config

@@ -1,7 +1,7 @@
 // Kconfig.defconfig
 if SHIELD_DAEDALUS_RIGHT
 
-config ZMK_DAEDALUS
+config ZMK_KEYBOARD_NAME
     default "Daedalus"
 
 config ZMK_SPLIT_ROLE_CENTRAL
