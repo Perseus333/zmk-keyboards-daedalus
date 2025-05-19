@@ -19,10 +19,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp CAPS
+   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp ENTER
    &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O
    &kp X &kp C &kp V &kp D &kp Z   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH
-         &kp LGUI  &kp RET &mo 1   &mo 2 &kp SPACE &kp RALT
+       &kp LCTRL &kp LSHFT &mo 1   &mo 2 &kp SPACE &kp BSPC
                         >;
                 };
                 lower_layer {
@@ -35,7 +35,7 @@
    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
    &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans
-                             &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                             &kp LALT     &kp RSHFT    &trans         &trans  &kp SPACE   &kp LWIN
                         >;
                 };
 
@@ -49,7 +49,7 @@
         &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR
         &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH
         &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE
-                        &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                       &kp LALT &kp RSHFT &trans      &trans    &kp SPACE &kp LWIN
                         >;
                 };
         };
