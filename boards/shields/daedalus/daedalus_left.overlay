@@ -1,4 +1,3 @@
-// daedalus_left.overlay
 #include "daedalus.dtsi"
 
 &kscan0 {

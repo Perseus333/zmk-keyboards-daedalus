@@ -1,4 +1,3 @@
-// Kconfig.defconfig
 if SHIELD_DAEDALUS_RIGHT
 
 config ZMK_KEYBOARD_NAME
