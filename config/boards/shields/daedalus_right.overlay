@@ -1,3 +1,4 @@
+// daedalus_right.overlay
 #include "daedalus.dtsi"
 
 &default_transform { 

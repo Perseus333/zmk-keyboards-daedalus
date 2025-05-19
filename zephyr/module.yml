@@ -1,3 +1,4 @@
+name: zmk-keyboard-daedalus
 build:
   settings:
     board_root: .
