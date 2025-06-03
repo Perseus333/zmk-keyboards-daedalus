@@ -1,4 +1,11 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <layouts/foostan/corne/5column.dtsi>
+
+// Assigning suitable kscan and matrix transforms
+&foostan_corne_5col_layout {
+    transform = <&default_transform>;
+    kscan = <&kscan0>;
+};
 
 / {
     chosen {
