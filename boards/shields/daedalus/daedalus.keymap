@@ -65,7 +65,7 @@
 &trans         &trans       &trans           &trans         &trans                 &trans     &trans           &trans            &trans          &trans
                             &trans           &trans         &trans                 &kp C_STOP &kp K_PLAY_PAUSE &kp C_MUTE
                 >;
-                }
+                };
                 numbers {
 /*-------------------------------------------
 | [ | 7 | 8 | 9 | ] |  |   |   |   |   |   |
@@ -79,7 +79,7 @@
 &kp GRAVE        &kp N7 &kp N8  &kp N9 &kp BACKSLASH            &trans &trans          &trans            &trans        &trans
                         &kp DOT &kp N0 &kp MINUS                &trans &trans          &trans
                 >;
-                }
+                };
                 symbols {
 /*-------------------------------------------
 | { | & | * | ( | } |  |   |   |   |   |   |
@@ -93,7 +93,7 @@
 &kp TILDE      &kp EXCLAMATION &kp AT_SIGN  &kp HASH              &kp PIPE               &trans &trans          &trans            &trans        &trans
                        &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp UNDERSCORE         &trans &trans          &trans
                 >;
-                }
+                };
                 functions {
 /*-------------------------------------------
 |F10|F1 |F2 |F3 |PTS|  |   |RST|   |   |BOT|
@@ -107,7 +107,7 @@
 &kp F12  &kp F7 &kp F8     &kp F9    &trans                  &trans     &trans          &trans            &trans        &trans
                 &kp K_MENU &kp SPACE &kp TAB                 &trans     &trans          &trans
                 >;
-                }
+                };
                 // Extra layers for changes with ZMK Config
                 extra1 {
                         status: "reserved";
