@@ -34,7 +34,7 @@
 &kp Q          &kp W          &kp F              &kp P            &kp B              &kp J          &kp L             &kp U               &kp Y           &kp APOSTROPHE
 &mt LEFT_GUI A &mt LEFT_ALT R &mt LEFT_CONTROL S &mt LEFT_SHIFT T &kp G              &kp M          &mt RIGHT_SHIFT N &mt RIGHT_CONTROL E &mt RIGHT_ALT I &mt RIGHT_GUI O
 &kp X          &kp C          &kp V              &kp D            &kp Z              &kp K          &kp H             &kp COMMA           &kp DOT         &kp FSLH
-                              &lt MEDIA DEL      &lt NAV BSPC     &lt BOOT TAB      &lt SYMB ENTER &lt NUMBERS SPACE &lt FUNC ESC
+                              &lt 2 DEL      &lt 1 BSPC     &lt TAB      &lt SYMB ENTER &lt NUMBERS SPACE &lt FUNC ESC
                 >;
                 };
 

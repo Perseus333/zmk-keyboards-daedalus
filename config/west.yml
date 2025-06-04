@@ -8,8 +8,7 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      path: zmk
       import: app/west.yml
     - name: zmk-keyboards-daedalus
       remote: perseus333
