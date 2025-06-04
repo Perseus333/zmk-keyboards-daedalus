@@ -110,10 +110,10 @@
                 };
                 // Extra layers for changes with ZMK Config
                 extra1 {
-                        status: "reserved";
+                        status = "reserved";
                 };
                 extra2 {
-                        status: "reserved";
+                        status = "reserved";
                 };
 
         };
