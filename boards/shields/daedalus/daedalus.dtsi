@@ -1,12 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "daedalus-layouts.dtsi"
 
-// Assigning suitable kscan and matrix transforms
-&foostan_corne_5col_layout {
-    transform = <&default_transform>;
-    kscan = <&kscan0>;
-};
-
 / {
     chosen {
         zmk,kscan = &kscan0;
