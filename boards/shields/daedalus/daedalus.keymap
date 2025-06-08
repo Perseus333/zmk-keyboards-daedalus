@@ -20,7 +20,7 @@
 
 / {
         keymap {
-                compatible = "zmk,keymap";
+                compatible = "zmk,keymap,zmk-studio";
 
                 default_layer {
                 bindings = <
@@ -60,7 +60,7 @@
         |DEL|BSP|TAB|  |STP|PLP|MUT|
 ---------------------------------------------*/
                 bindings = <
-&bootloader       &trans       &trans           &trans         &sys_reset        &trans     &trans           &trans            &trans          &trans
+&bootloader       &studio_unlock       &trans           &trans         &sys_reset        &trans     &trans           &trans            &trans          &trans
 &mo LEFT_GUI   &mo LEFT_ALT &mo LEFT_CONTROL &mo LEFT_SHIFT &trans                 &trans     &kp K_PREV       &kp K_VOLUME_DOWN &kp K_VOLUME_UP &kp K_NEXT
 &trans         &trans       &trans           &trans         &trans                 &trans     &trans           &trans            &trans          &trans
                             &trans           &trans         &trans                 &kp C_STOP &kp K_PLAY_PAUSE &kp C_MUTE
