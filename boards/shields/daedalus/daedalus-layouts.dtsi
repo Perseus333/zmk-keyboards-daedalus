@@ -1,5 +1,4 @@
 #include <physical_layouts.dtsi>
-#include "daedalus-layouts.dtsi"
 
 / {
     physical_layout0: physical_layout_0 {

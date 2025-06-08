@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <layouts/foostan/corne/5column.dtsi>
+#include "daedalus-layouts.dtsi"
 
 // Assigning suitable kscan and matrix transforms
 &foostan_corne_5col_layout {
