@@ -4,7 +4,6 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &keymap_transform_0;
         zmk,physical-layout = &physical_layout0;
     };
 
