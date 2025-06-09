@@ -1,16 +1,15 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "daedalus-layouts.dtsi"
 
+&physical_layout0 {
+    transform = <&default_transform>;
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
     };
-
-    &physical_layout0 {
-        transform = <&default_transform>;
-    };
-
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
