@@ -9,3 +9,7 @@
         , <&pro_micro 10 GPIO_ACTIVE_HIGH> // INNER
         ;
 };
+
+&left_encoder {
+    status = "okay";
+};

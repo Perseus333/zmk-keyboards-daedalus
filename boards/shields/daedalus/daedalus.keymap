@@ -36,6 +36,8 @@
 &kp X          &kp C          &kp V              &kp D            &kp Z              &kp K          &kp H             &kp COMMA           &kp DOT         &kp FSLH
                               &lt 2 DEL      &lt 1 BSPC     &kp TAB      &lt 4 ENTER &lt 3 SPACE &lt 5 ESC
                 >;
+                /*Binding for the encoder*/
+                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 nav {
