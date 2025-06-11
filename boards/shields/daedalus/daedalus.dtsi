@@ -48,8 +48,8 @@
         steps = <20>; // Unknown, change if needed
         status = "disabled"; // Why tho?
     };
-    
-    sensors: sensors {
+
+    sensors {
         compatible = "zmk, keymap-sensors";
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>; // Same as steps, still unknown
