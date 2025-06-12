@@ -117,10 +117,6 @@
                 extra2 {
                         status = "reserved";
                 };
-                sensors {
-                        compatible = "zmk, keymap-sensors";
-                        sensors = <&left_encoder>;
-                        triggers-per-rotation = <20>; // Same as steps, still unknown
-                };
+
         };
 };

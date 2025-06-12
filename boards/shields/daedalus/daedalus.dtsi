@@ -42,7 +42,7 @@
     };
 
     left_encoder: encoder_left {
-        label = "LEFT_ENCODER"
+        label = "LEFT_ENCODER";
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // Pin A
         b-gpios = <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; // Pin B
