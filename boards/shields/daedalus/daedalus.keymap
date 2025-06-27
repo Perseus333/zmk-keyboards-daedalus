@@ -37,7 +37,7 @@
                               &lt 2 DEL          &lt 1 BSPC       &kp TAB            &lt 4 ENTER    &lt 3 SPACE       &lt 5 ESC
                 >;
                 /*Binding for the encoder*/
-                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                sensor-bindings = <&inc_dec_kp K_VOL_UP K_VOL_DN>;
                 };
 
                 nav {
