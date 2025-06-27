@@ -34,7 +34,7 @@
 &kp Q          &kp W          &kp F              &kp P            &kp B              &kp J          &kp L             &kp U               &kp Y           &kp APOSTROPHE
 &mt LEFT_GUI A &mt LEFT_ALT R &mt LEFT_CONTROL S &mt LEFT_SHIFT T &kp G              &kp M          &mt RIGHT_SHIFT N &mt RIGHT_CONTROL E &mt RIGHT_ALT I &mt RIGHT_GUI O
 &kp X          &kp C          &kp V              &kp D            &kp Z              &kp K          &kp H             &kp COMMA           &kp DOT         &kp FSLH
-                              &lt 2 DEL      &lt 1 BSPC     &kp TAB      &lt 4 ENTER &lt 3 SPACE &lt 5 ESC
+                              &lt 2 DEL          &lt 1 BSPC       &kp TAB            &lt 4 ENTER    &lt 3 SPACE       &lt 5 ESC
                 >;
                 /*Binding for the encoder*/
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -51,21 +51,21 @@
 &trans       &trans       &trans           &trans         &trans        &kp K_REDO   &kp K_PASTE    &kp K_COPY     &kp K_CUT     &kp K_UNDO
 &mo LEFT_GUI &mo LEFT_ALT &mo LEFT_CONTROL &mo LEFT_SHIFT &trans        &kp CAPSLOCK &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW  &kp RIGHT_ARROW
 &trans       &trans       &trans           &trans         &trans        &kp INSERT   &kp HOME       &kp PAGE_DOWN  &kp PAGE_UP   &kp END
-                          &trans           &trans         &trans        &trans           &trans         &trans
+                          &trans           &trans         &trans        &trans       &trans         &trans
                 >;
                 };
                 media {
 /*-------------------------------------------
-|BLD|   |   |   |RST|  |   |   |   |   |   |
+|BLD|STD|BCA|   |RST|  |   |   |   |   |   |
 |GUI|ALT|CRL|SHF|   |  |   |PRV|VUP|VDN|NXT|
 |   |   |   |   |   |  |   |   |   |   |   |
         |DEL|BSP|TAB|  |STP|PLP|MUT|
 ---------------------------------------------*/
                 bindings = <
-&bootloader       &studio_unlock       &trans           &trans         &sys_reset        &trans     &trans           &trans            &trans          &trans
-&mo LEFT_GUI   &mo LEFT_ALT &mo LEFT_CONTROL &mo LEFT_SHIFT &trans                 &trans     &kp K_PREV       &kp K_VOLUME_DOWN &kp K_VOLUME_UP &kp K_NEXT
-&trans         &trans       &trans           &trans         &trans                 &trans     &trans           &trans            &trans          &trans
-                            &trans           &trans         &trans                 &kp C_STOP &kp K_PLAY_PAUSE &kp C_MUTE
+&bootloader    &studio_unlock &bt BT_CLR_ALL   &trans         &sys_reset             &trans     &trans           &trans            &trans          &trans
+&mo LEFT_GUI   &mo LEFT_ALT   &mo LEFT_CONTROL &mo LEFT_SHIFT &trans                 &trans     &kp K_PREV       &kp K_VOLUME_DOWN &kp K_VOLUME_UP &kp K_NEXT
+&trans         &trans         &trans           &trans         &trans                 &trans     &trans           &trans            &trans          &trans
+                              &trans           &trans         &trans                 &kp C_STOP &kp K_PLAY_PAUSE &kp C_MUTE
                 >;
                 };
                 numbers {
@@ -98,13 +98,13 @@
                 };
                 functions {
 /*-------------------------------------------
-|F10|F1 |F2 |F3 |PTS|  |   |RST|   |   |BOT|
+|F10|F1 |F2 |F3 |PTS|  |RST|   |BCA|STD|BLD|
 |F11|F4 |F5 |F6 |   |  |   |SHF|CRL|ALT|GUI|
 |F12|F1 |F2 |F3 |   |  |   |   |   |   |   |
         |APP|SPC|TAB|  |   |   |   |
 ---------------------------------------------*/
                 bindings = <
-&kp F10  &kp F1 &kp F2     &kp F3    &kp PRINTSCREEN         &sys_reset &trans          &trans            &trans        &bootloader
+&kp F10  &kp F1 &kp F2     &kp F3    &kp PRINTSCREEN         &sys_reset &trans          &bt BT_CLR_ALL    &studio_unlock        &bootloader
 &kp F11  &kp F4 &kp F5     &kp F6    &trans                  &trans     &mo RIGHT_SHIFT &mo RIGHT_CONTROL &mo RIGHT_ALT &mo RIGHT_GUI
 &kp F12  &kp F7 &kp F8     &kp F9    &trans                  &trans     &trans          &trans            &trans        &trans
                 &kp K_MENU &kp SPACE &kp TAB                 &trans     &trans          &trans
