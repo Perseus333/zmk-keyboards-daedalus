@@ -55,10 +55,11 @@
         sensors = <&left_encoder>;
         triggers-per-rotation = <20>; // Same as steps, still unknown
     };
-
+/*
     glidepoint_listener {
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
         // Add necessary input-processors once tested
     };
+*/
 };
