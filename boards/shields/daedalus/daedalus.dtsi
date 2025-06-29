@@ -6,11 +6,6 @@
     transform = <&default_transform>;
 };
 
-&mt {
-    tapping-term-ms = <500>;
-    flavor = "tap-preferred";
-};
-
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -68,4 +63,14 @@
         // Add necessary input-processors once tested
     };
 */
+    behaviors {
+        htp: hold_tap_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <500>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Tap preffered hold-tap";
+        };
+    };
 };
