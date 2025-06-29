@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <behaviors.dtsi>
+#include <dt-bindings/zmk/behaviors.h>
 #include "daedalus-layouts.dtsi"
 
 &physical_layout0 {
