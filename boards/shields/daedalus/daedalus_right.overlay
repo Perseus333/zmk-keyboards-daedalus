@@ -14,14 +14,13 @@
         ;
 };
 
-// TODO: Fix this
-
 &pro_micro_i2c {
     status = "okay";
-    cs-gpios = <&pro_micro 19 GPIO_ACTIVE_LOW>;
+    dr-gpios = <&pro_micro 19 GPIO_ACTIVE_HIGH>;
     glidepoint: glidepoint@0 {
         compatible = "cirque,pinnacle";
-        reg = <0>;
+        reg = <0x2a>;
+        sleep;
     };
 };
 
