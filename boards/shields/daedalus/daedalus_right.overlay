@@ -13,21 +13,15 @@
         , <&pro_micro 18 GPIO_ACTIVE_HIGH> // PINKY
         ;
 };
-// TODO: Fix this, and find a glidepoint libary
-/*
+
+// TODO: Fix this
+
 &pro_micro_i2c {
     status = "okay";
     cs-gpios = <&pro_micro 19 GPIO_ACTIVE_LOW>;
     glidepoint: glidepoint@0 {
         compatible = "cirque,pinnacle";
         reg = <0>;
-        spi-max-frequency = <1000000>;
-        status = "okay";
-        dr-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH)>;
-
-        sensitivity = "4x";
-        sleep;
-        no-taps;
     };
 };
 
@@ -35,4 +29,3 @@
     status = "okay";
     device = <&glidepoint>;
 };
-*/
