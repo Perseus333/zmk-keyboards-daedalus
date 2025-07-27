@@ -41,10 +41,10 @@
         // Hoping that this just works
         // dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "4x";
-        sleep;
     };
 };
 
-&glidepoint_split {
+&glidepoint_listener {
+    status = "okay";
     device = <&glidepoint>;
 };
