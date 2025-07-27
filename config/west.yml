@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/perseus333
     - name: petejohanson
       url-base: https://github.com/petejohanson
-#    - name: pm0u
-#      url-base: https://github.com/pm0u
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -21,8 +19,5 @@ manifest:
     - name: cirque-input-module
       remote: petejohanson
       revision: main
-#    - name: glidepoint_i2c
-#      remote: pm0u
-#      revision: main
   self:
     path: config
