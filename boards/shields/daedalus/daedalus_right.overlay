@@ -14,17 +14,37 @@
         ;
 };
 
+&pinctrl {
+    i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 04)>,
+                <NRF_PSEL(TWIM_SCL, 0, 11)>;
+            bias-pull-up;
+        };
+    };
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 04)>,
+                <NRF_PSEL(TWIM_SCL, 0, 11)>;
+            low-power-enable;
+        };
+    };
+};
+
 &pro_micro_i2c {
     status = "okay";
-    dr-gpios = <&pro_micro 19 GPIO_ACTIVE_HIGH>;
-    glidepoint: glidepoint@0 {
+    glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
+        status = "okay";
         reg = <0x2a>;
+        // I didn't connect the DR pin to the MCU
+        // Hoping that this just works
+        // dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+        sensitivity = "4x";
         sleep;
     };
 };
 
-&glidepoint_listener {
-    status = "okay";
+&glidepoint_split {
     device = <&glidepoint>;
 };

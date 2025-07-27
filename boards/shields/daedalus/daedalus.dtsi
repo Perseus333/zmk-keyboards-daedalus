@@ -42,6 +42,17 @@
             ;
     };
 
+    behaviors {
+        htp: hold_tap_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <500>;
+            bindings = <&kp>, <&kp>;
+            display-name = "Tap preffered hold-tap";
+        };
+    };
+
     left_encoder: encoder_left {
         label = "LEFT_ENCODER";
         compatible = "alps,ec11";
@@ -57,19 +68,20 @@
         triggers-per-rotation = <20>; // Same as steps, still unknown
     };
 
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        glidepoint_split: glidepoint_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+
     glidepoint_listener: glidepoint_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
+        device = <&glidepoint_split>;
     };
 
-    behaviors {
-        htp: hold_tap_preferred {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <500>;
-            bindings = <&kp>, <&kp>;
-            display-name = "Tap preffered hold-tap";
-        };
-    };
 };

@@ -8,6 +8,7 @@ features:
   - keys
   - encoder
   - studio
+  - pointer
 siblings:
   - daedalus_left
   - daedalus_right
