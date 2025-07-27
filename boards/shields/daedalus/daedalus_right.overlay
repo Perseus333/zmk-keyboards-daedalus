@@ -37,9 +37,8 @@
         compatible = "cirque,pinnacle";
         status = "okay";
         reg = <0x2a>;
-        // I didn't connect the DR pin to the MCU
-        // Hoping that this just works
-        // dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+        // Note that this is only applicable in v1.1 or above
+        dr-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "4x";
     };
 };
