@@ -15,7 +15,7 @@ manifest:
       import: app/west.yml
     - name: zmk-keyboards-daedalus
       remote: perseus333
-      revision: master
+      revision: main
     - name: cirque-input-module
       remote: petejohanson
       revision: main
